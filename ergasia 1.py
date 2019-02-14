@@ -21,20 +21,26 @@ def  summintervals(a):
         for j in range(a[k][0]+1,a[k][-1]):
               eswterika.append(j)
               
-
+    
 #diagrafw apo tin lista twn akrwn ekeina ta akra pou iparxoun kai sti lista twn
 #eswterikwn wste na min epanalambanontai diastimata
-    for i in range(len(eswterika)):
-           if akra[i] in eswterika :
-               del akra[i]
+    a=set(akra)
+    e=set(eswterika)
+
+    a.difference_update(e)
+    akr=list(a)        
 #kai telika gia na brw ta miki twn diastimatwn briskw ti diafora twn akrwn tous
 #ana dio kai athrizw oles tis diafores diladi ola ta miki               
+    print (eswterika)
+    print (akra)
     s=0
-    for i in range(0,len(akra)-1,2):
+    for i in range(0,len(akr)-1,2):
         
-        s= akra[i+1]-akra[i]+s
+        s= akr[i+1]-akr[i]+s
 
     print(s)
+summintervals([[1,5],[10,20],[1,6],[16,19],[5,11]])
+
 
 
 
