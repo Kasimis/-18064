@@ -56,26 +56,6 @@ print a.upper()
 
 
 
-  #  for i in range(len(a1)):
-  #      if a1[i]==a2[s1]:
-  #          a1[i]=a2[s2]
-  #      elif a1[i]==a2[s2]:
- #           a1[i]=a2[s1]
- #   print ("".join(a1)),
-
-
-#makari('patata')   
-#f = open('test.txt','r')
-#x = f.read()
-#f.close()
-#import re
-#y = re.split("(\s+)",x)
-
-#for i in range(len(y)):
-#    if " " not in y[i]:
-#        makari(y[i])
-#    else:
-#        print(y[i]),
 
 
 
